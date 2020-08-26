@@ -2,8 +2,8 @@ const net = require('net');
 // this establishes connection with the game server
 const connect = function() {
   const conn = net.createConnection({
-    host: '10.0.2.15', // am i supposed to use this or localhost
-    port: 50541
+    host: '135.23.222.131', // am i supposed to use this or localhost
+    port: 50542
   });
 
   // this lets us interpret incomeing data from the server as text
