@@ -12,7 +12,10 @@ const connect = function() {
   conn.on('connect', () => {
     console.log("Successfully connected to the game server");
     conn.write("Name: EMS");
+    conn.write("Move: up");    
   });
+
+    
   // conn will now use the built-in 'on' method to handle incoming data
   // 
   conn.on('data', (data) => {
